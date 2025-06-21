@@ -170,8 +170,15 @@ So I'm going to first open PHP Manager
 
 <img width="854" alt="Screenshot 2025-06-21 at 10 12 43 AM" src="https://github.com/user-attachments/assets/5a93bde6-2835-4d55-88c1-9c4250a1c003" />
 
+<p>Click "Register new PHP version"</p>
 
+<img width="854" alt="Screenshot 2025-06-21 at 10 12 43 AM" src="https://github.com/user-attachments/assets/87b467b1-6376-4e50-8454-1c9f587cbc80" />
 
+<p>Then I'm going to browse for the PHP folder that i just made in the c drive 
+Click ... -> This PC -> PHP -> Then run php.cgi
+</p>
+
+<img width="849" alt="Screenshot 2025-06-21 at 2 43 03 PM" src="https://github.com/user-attachments/assets/e6250665-7bc7-49a6-a2a1-c1a33e54d2cb" />
 
 
 
