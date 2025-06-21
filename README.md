@@ -161,6 +161,18 @@ So i just go start menu -> type "iss" on the search bar -> either right click an
 
 <img width="900" alt="Screenshot 2025-06-21 at 9 56 59 AM" src="https://github.com/user-attachments/assets/5374110a-2685-4ff9-8444-0d57e5f061c5" />
 
+<h4>Register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe)</h4>
+
+<p>So we’re doing this so the web server actually knows that PHP exists on the computer. We’re basically just telling IIS where PHP is located so it knows how to handle any PHP files that come through.
+  
+So I'm going to first open PHP Manager
+</p>
+
+<img width="854" alt="Screenshot 2025-06-21 at 10 12 43 AM" src="https://github.com/user-attachments/assets/5a93bde6-2835-4d55-88c1-9c4250a1c003" />
+
+
+
+
 
 
 
