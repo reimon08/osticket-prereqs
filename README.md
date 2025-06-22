@@ -238,5 +238,68 @@ Click ... -> This PC -> c:\ PHP -> Then run php.cgi
 
 ![Screenshot 2025-06-22 at 12 12 59 PM](https://github.com/user-attachments/assets/e76d283e-ae5e-42e8-a8ea-de73b519839f)
 
+<p>You’ll notice that some extensions aren’t enabled yet. So I go back into IIS → Sites → Default → osTicket, then double-click PHP Manager. From there, I click “Enable or disable an extension” and enable the following: php_imap.dll, php_intl.dll, and php_opcache.dll.
+
+</p>
+<img width="851" alt="Screenshot 2025-06-22 at 5 28 42 PM" src="https://github.com/user-attachments/assets/3b2a50da-570e-4a74-859d-a0d6a24f51af" />
+
+<img width="851" alt="Screenshot 2025-06-22 at 5 31 41 PM" src="https://github.com/user-attachments/assets/f868f76a-cce9-4279-86d1-48373f960e6e" />
+
+<p>You can either right-click on each extension and hit Enable, or just select it and press Enable on the top right corner.
+
+</p>
+
+<img width="851" alt="Screenshot 2025-06-22 at 5 38 17 PM" src="https://github.com/user-attachments/assets/583dc259-cca1-4b46-9c8a-814262b9e1ef" />
+
+<p>After we’ve enabled those extensions, I just refresh the osTicket website, and now I can see that all the extensions we enabled are checked off and ready to go.
+
+</p>
+<img width="833" alt="Screenshot 2025-06-22 at 5 45 21 PM" src="https://github.com/user-attachments/assets/d1abd978-f1a3-4abe-b3e7-94d62445ef0b" />
+
+<p>Next up, I’m renaming a file that osTicket uses for its configuration. Basically, I’m taking ost-sampleconfig.php from C:\inetpub\wwwroot\osTicket\include\ and renaming it to ost-config.php. This is the file osTicket is gonna use to store all the config settings.
+
+</p>
+
+<img width="851" alt="Screenshot 2025-06-22 at 5 58 58 PM" src="https://github.com/user-attachments/assets/f095e565-ef55-469a-b71d-f04188c502f9" />
+
+<p>Next, I’m assigning permissions to the ost-config.php file. I go in, disable inheritance, and remove all the existing permissions. Then I add new permissions and give Everyone full access.
+
+So first, I right-click on ost-config.php and click Properties. Once it opens up, it should look like this.
+</p>
+
+<img width="900" alt="Screenshot 2025-06-22 at 6 08 49 PM" src="https://github.com/user-attachments/assets/30f7adf9-ebee-43c9-a4cf-bbd6dae80c1a" />
+<p>Then I click on the Security tab inside the ost-config.php Properties, and from there I click Advanced to get into the permission settings.
+
+</p>
+<img width="361" alt="Screenshot 2025-06-22 at 6 12 17 PM" src="https://github.com/user-attachments/assets/79641e91-5365-4fd3-a931-f0b6800bb1da" />
+
+<p>So now I’m gonna disable inheritance to strip away all the previous permissions that were already set on the file.
+
+</p>
+
+<img width="765" alt="Screenshot 2025-06-22 at 6 16 22 PM" src="https://github.com/user-attachments/assets/bdabc3e6-9daa-4a67-9aec-a7fbcf7e5437" />
+<img width="765" alt="Screenshot 2025-06-22 at 6 16 42 PM" src="https://github.com/user-attachments/assets/20f7f6d7-d9c3-4dd9-8417-a1d8576b1052" />
+<p>Now I'm going to add new permissions.</p>
+<img width="765" alt="Screenshot 2025-06-22 at 6 19 09 PM" src="https://github.com/user-attachments/assets/d5774c6b-e3ae-4631-8089-eba37edb36e9" />
+<p>Click Select a Principal</p>
+<img width="914" alt="Screenshot 2025-06-22 at 6 24 09 PM" src="https://github.com/user-attachments/assets/66dbbad6-149b-49ef-bedf-3575a605524e" />
+<p>So now I’m adding new permissions. This isn’t something you’d want to do in real life, but just to keep it simple for this setup, I’m giving Everyone full access since I don’t know exactly which user osTicket is running as.</p>
+
+<img width="914" alt="Screenshot 2025-06-22 at 6 28 14 PM" src="https://github.com/user-attachments/assets/71717858-f9c2-4e42-ba41-f2c465f08ed3" />
+<p>Then check full control and hit OK.</p>
+<img width="914" alt="Screenshot 2025-06-22 at 6 30 05 PM" src="https://github.com/user-attachments/assets/c8ad3863-d51e-45f0-8a99-63d0cef0a449" />
+<p>So after everything’s done, it should look like this — ost-config.php with Everyone having full access.
+
+Then click apply and then OK </p>
+<img width="765" alt="Screenshot 2025-06-22 at 6 33 04 PM" src="https://github.com/user-attachments/assets/098dec18-2007-4a84-bc56-104fefdb997f" />
+<p>And click OK here as well</p>
+<img width="362" alt="Screenshot 2025-06-22 at 6 34 17 PM" src="https://github.com/user-attachments/assets/04cf18bd-9756-4dfc-94ff-d898d68525d0" />
+
+
+
+
+
+
+
 
 
