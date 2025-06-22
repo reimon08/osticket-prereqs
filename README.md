@@ -172,19 +172,71 @@ So I'm going to first open PHP Manager
 
 <p>Click "Register new PHP version"</p>
 
-<img width="854" alt="Screenshot 2025-06-21 at 10 12 43 AM" src="https://github.com/user-attachments/assets/87b467b1-6376-4e50-8454-1c9f587cbc80" />
+<img width="868" alt="Screenshot 2025-06-21 at 2 38 46 PM" src="https://github.com/user-attachments/assets/85d2cdd5-2988-4ac8-b3b5-00d4147185c8" />
 
-<p>Then I'm going to browse for the PHP folder that i just made in the c drive 
-Click ... -> This PC -> PHP -> Then run php.cgi
+
+<p>Then I'm going to browse for the PHP folder that I just made in the c:\ drive 
+Click ... -> This PC -> c:\ PHP -> Then run php.cgi
 </p>
 
 <img width="849" alt="Screenshot 2025-06-21 at 2 43 03 PM" src="https://github.com/user-attachments/assets/e6250665-7bc7-49a6-a2a1-c1a33e54d2cb" />
 
+<h4>Reload IIS (Open IIS, Stop and Start the server)
+</h4>
+
+<p>So after registering PHP inside IIS, I go ahead and reload IIS — I just open up IIS, stop the server, and start it again. This makes sure all the changes take effect.
+
+</p>
+
+<img width="855" alt="Screenshot 2025-06-22 at 11 03 25 AM" src="https://github.com/user-attachments/assets/94992656-8f30-496e-9447-7562a3999d3e" />
 
 
+<img width="855" alt="Screenshot 2025-06-22 at 11 03 44 AM" src="https://github.com/user-attachments/assets/eea248d9-320a-4b5f-bee6-288baeec4c17" />
 
+<h4>Install osTicket v1.15.8
+</h4>
 
+<p>From the “osTicket-Installation-Files” folder, unzip “osTicket-v1.15.8.zip”</p>
 
+<img width="855" alt="Screenshot 2025-06-22 at 11 08 42 AM" src="https://github.com/user-attachments/assets/5c96cacb-7adc-4c6d-89af-1982514f8cbc" />
+
+<img width="616" alt="Screenshot 2025-06-22 at 11 10 24 AM" src="https://github.com/user-attachments/assets/dc94de70-cc72-4e22-a488-8943a57c496d" />
+
+<img width="854" alt="Screenshot 2025-06-22 at 11 17 28 AM" src="https://github.com/user-attachments/assets/e30e58bc-a1d0-4c92-a558-10b57700a510" />
+
+<h4>Copy the “upload” folder into “c:\inetpub\wwwroot”</h4>
+<p>Inside the osTicket-v1.15.8 folder we extracted earlier, I’m grabbing the upload folder and moving it into C:\inetpub\wwwroot.</p>
+
+<h4>So I opened up file explorer -> This PC -> Windows (C:) -> inetpub -> wwwroot</h4>
+
+<img width="900" alt="Screenshot 2025-06-22 at 11 46 08 AM" src="https://github.com/user-attachments/assets/eaa31a48-567b-4434-8ba9-277b3d60e9fd" />
+
+<img width="900" alt="Screenshot 2025-06-22 at 11 46 17 AM" src="https://github.com/user-attachments/assets/bcc36020-6feb-47a7-b2e0-d11fbd0c02f1" />
+
+<h4>Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket”
+</h4>
+
+<p>After moving it, I make sure to rename the upload folder to just osTicket — no spaces, nothing extra, it should just be exactly "osTicket". </p>
+
+<img width="855" alt="Screenshot 2025-06-22 at 11 53 09 AM" src="https://github.com/user-attachments/assets/38d2b620-7c6e-4e93-8da6-3c6d8939ecea" />
+
+<h4>Reload IIS (Open IIS, Stop and Start the server)
+</h4>
+<p>Now I go ahead and reload IIS again — just open IIS, stop the server, and start it back up to make sure it picks up the changes we just made. </p>
+
+<img width="855" alt="Screenshot 2025-06-22 at 11 03 25 AM" src="https://github.com/user-attachments/assets/6628c677-6cee-430f-b136-94269b6b69b4" />
+
+<img width="855" alt="Screenshot 2025-06-22 at 11 03 44 AM" src="https://github.com/user-attachments/assets/b1c2131d-fba3-41de-ac1f-1c41daf587d5" />
+
+<h4>Now I'm going to try loading up the osTicket site. I go to Sites → Default → osTicket inside IIS. Then on the right side, I click *“Browse:80” to open it up.
+
+</h4>
+
+<img width="1048" alt="Screenshot 2025-06-22 at 12 06 27 PM" src="https://github.com/user-attachments/assets/f9a39f25-2515-47e5-9b2d-140fdb6097e6" />
+
+<p>After opening it up, it should load and look something like this. </p>
+
+![Screenshot 2025-06-22 at 12 12 59 PM](https://github.com/user-attachments/assets/e76d283e-ae5e-42e8-a8ea-de73b519839f)
 
 
 
