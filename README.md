@@ -288,12 +288,29 @@ So first, I right-click on ost-config.php and click Properties. Once it opens up
 <img width="914" alt="Screenshot 2025-06-22 at 6 28 14 PM" src="https://github.com/user-attachments/assets/71717858-f9c2-4e42-ba41-f2c465f08ed3" />
 <p>Then check full control and hit OK.</p>
 <img width="914" alt="Screenshot 2025-06-22 at 6 30 05 PM" src="https://github.com/user-attachments/assets/c8ad3863-d51e-45f0-8a99-63d0cef0a449" />
-<p>So after everything’s done, it should look like this — ost-config.php with Everyone having full access.
+<p>So after everything’s done, it should look like this -> ost-config.php with Everyone having full access.
 
 Then click apply and then OK </p>
 <img width="765" alt="Screenshot 2025-06-22 at 6 33 04 PM" src="https://github.com/user-attachments/assets/098dec18-2007-4a84-bc56-104fefdb997f" />
 <p>And click OK here as well</p>
 <img width="362" alt="Screenshot 2025-06-22 at 6 34 17 PM" src="https://github.com/user-attachments/assets/04cf18bd-9756-4dfc-94ff-d898d68525d0" />
+
+<p>Then, after that, I head back to the osTicket website and continue with the setup from there.</p>
+<img width="823" alt="Screenshot 2025-06-22 at 6 38 35 PM" src="https://github.com/user-attachments/assets/298b3ef4-95a9-4f9e-99c1-e8cf69c29e0d" />
+
+<p>Then you can name the Help Desk whatever you want, for mine, I just went with Reimon's Help Desk. Same with the email, it can be anything you want since this is just for the lab setup.
+
+And for the admin user, same thing, you can just put your name and last name. The only thing is that the email address needs to be different from the help desk email.
+
+And for the username and password, I just went with username: adminuser and password: Password1, just to keep things easy for this project.
+
+Before we click Install, even though we’ve already installed the database application on the backend, we still need to actually log into that database and create a new database specifically for osTicket. After that, we’ll provide the credentials for this section so osTicket knows where to store everything.
+
+</p>
+<img width="1000" alt="Screenshot 2025-06-22 at 6 49 31 PM" src="https://github.com/user-attachments/assets/c9b270b5-87e3-48cc-ba63-0d76e45ac944" />
+
+
+
 
 
 
