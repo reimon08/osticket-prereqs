@@ -385,6 +385,10 @@ We can use the credentials that we made earlier user:adminuser password:Password
 
 <img width="1000" alt="Screenshot 2025-06-22 at 11 36 21 PM" src="https://github.com/user-attachments/assets/7353dc3a-f93c-4398-96e0-0d368f4c3a00" />
 
+<h2>I hope this helped you out with installing osTicket!
+
+</h2>
+
 
 
 
