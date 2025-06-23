@@ -309,6 +309,107 @@ Before we click Install, even though we’ve already installed the database appl
 </p>
 <img width="1000" alt="Screenshot 2025-06-22 at 6 49 31 PM" src="https://github.com/user-attachments/assets/c9b270b5-87e3-48cc-ba63-0d76e45ac944" />
 
+<p>So from the osTicket-Installation-Files folder, I install HeidiSQL. Once it’s installed, I open it up, create a new session using root/root for the username and password, connect to the session, and then create a new database called osTicket.
+
+</p>
+<h4>I open file explorer -> This PC -> Desktop -> osTicket-Installation-Files</h4>
+<p>Install HeidiSQL and just click next on everything and install</p>
+
+<img width="1096" alt="Screenshot 2025-06-22 at 10 42 27 PM" src="https://github.com/user-attachments/assets/0cb5e448-d8c8-4eae-9fef-152d2ee5e4ea" />
+
+<p>And then I make sure to check the "launch HeidiSQL"</p>
+
+<img width="700" alt="Screenshot 2025-06-22 at 10 43 42 PM" src="https://github.com/user-attachments/assets/62d5e123-eea2-416f-8654-04de5fde6d6c" />
+
+<p>With HeidiSQL, we’re basically making a connection to our database so we can set everything up. Once we’re connected, we go ahead and create a new database that osTicket is gonna use.
+
+</p>
+
+<h4>Create a new session, username:root password:root, I got these credentials when I was setting up the MySQL Server. So I click open after.
+</h4>
+
+<img width="939" alt="Screenshot 2025-06-22 at 10 53 01 PM" src="https://github.com/user-attachments/assets/f448f5c7-cfaf-4302-92a7-8a6b793d2249" />
+
+<p>This will open a connection to our database.</p>
+
+<img width="932" alt="Screenshot 2025-06-22 at 10 58 08 PM" src="https://github.com/user-attachments/assets/02cbc8cd-489a-4c5b-92b7-2cc85be4f8b1" />
+
+<h4>Create a database called “osTicket”
+</h4>
+
+<p>So I’m gonna create a database called "osTicket". I just right-click the icon on the top left corner that kinda looks like a dolphin 😂, then hover over Create new and click Database.
+
+</p>
+
+<img width="932" alt="Screenshot 2025-06-22 at 11 04 46 PM" src="https://github.com/user-attachments/assets/3aa6e70d-b759-4c89-a853-03f27d9fa362" />
+
+<p>It's crucial to write it exactly as "osTicket" or else there will be problems</p>
+
+<img width="932" alt="Screenshot 2025-06-22 at 11 06 54 PM" src="https://github.com/user-attachments/assets/7b634f6c-6f4a-4364-988c-0c85c9497ab8" />
+
+<p>Then you’ll see that the database is created, and it shows up right here.
+
+But there’s nothing in it yet. The actual installation that’s happening in the browser is what’s gonna use this database and start putting stuff in there.
+
+</p>
+
+<img width="932" alt="Screenshot 2025-06-22 at 11 09 54 PM" src="https://github.com/user-attachments/assets/b3043cf2-cb28-40b6-bb9b-e5be3167d38f" />
+
+<h4>Now let’s go back and continue setting up osTicket in the browser.</h4>
+<p>So now I just enter the credentials we made earlier inside HeidiSQL — osTicket for the MySQL Database and using root for the username and root for the password.
+
+And I just click install now.
+
+</p>
+
+<img width="900" alt="Screenshot 2025-06-22 at 11 17 26 PM" src="https://github.com/user-attachments/assets/74cbf86f-2155-4d5c-ad7c-e04b1fecbcdb" />
+
+<h3>Congratulations!! You’ve just installed osTicket! Hopefully, everything installed with no errors.</h3>
+
+<img width="1000" alt="Screenshot 2025-06-22 at 11 22 07 PM" src="https://github.com/user-attachments/assets/6328befd-fdaf-4019-a0d4-2454ee538959" />
+
+<h4>This is the link that you use for logging in as an admin.</h4>
+
+<p>http://localhost/osTicket/scp/login.php
+We can use the credentials that we made earlier user:adminuser password:Password1
+</p>
+
+<img width="1000" alt="Screenshot 2025-06-22 at 11 28 47 PM" src="https://github.com/user-attachments/assets/4e048957-dccc-4fa2-9a3f-487807d239c0" />
+
+<p>As you can see, we are logged in now, you could also see a ticket that says "osTicket installed"</p>
+
+<img width="1179" alt="Screenshot 2025-06-22 at 11 30 30 PM" src="https://github.com/user-attachments/assets/93a7b519-10fa-450e-9ee5-85aa00542e4d" />
+
+<h4>And this is the link for end-users if they want to make trouble tickets for themselves. </h4>
+<p>http://localhost/osTicket/</p>
+
+<img width="1000" alt="Screenshot 2025-06-22 at 11 36 21 PM" src="https://github.com/user-attachments/assets/7353dc3a-f93c-4398-96e0-0d368f4c3a00" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
